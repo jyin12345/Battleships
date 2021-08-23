@@ -25,13 +25,13 @@ void draw_screen();
 u8 player_field[FIELD_WIDTH * FIELD_HEIGHT];
 
 int main() {
-	// Set array value to '.' for all element
-	memset(player_field, '.', FIELD_WIDTH * FIELD_HEIGHT);
-	
-	draw_boat('k', 3, 3); /* Put a boat at C3, where C = 3*/
-	draw_screen(); /* Draw the dield to the screen */
-	
-	return 0;
+    // Set array value to '.' for all element
+    memset(player_field, '.', FIELD_WIDTH * FIELD_HEIGHT);
+    
+    draw_boat('k', 3, 3); /* Put a boat at C3, where C = 3*/
+    draw_screen(); /* Draw the dield to the screen */
+    
+    return 0;
 }
 
 /**
@@ -46,11 +46,11 @@ void draw_boat(char sym, u8 x, u8 y) {
  * buffer
  */
 void draw_screen() {
-	for (u8 y = 0; y < FIELD_HEIGHT; ++y) {
-		for (u8 x = 0; x < FIELD_WIDTH; ++x) {
-			printf(" %c ", player_field[y * FIELD_WIDTH + x]);
-		}
-		printf("\n");
-	}
+    for (u8 y = 0; y < FIELD_HEIGHT; ++y) {
+        for (u8 x = 0; x < FIELD_WIDTH; ++x) {
+            printf(" %c ", player_field[y * FIELD_WIDTH + x]);
+        }
+        printf("\n");
+    }
 }
 ```
