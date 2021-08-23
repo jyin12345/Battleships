@@ -1,7 +1,7 @@
 # Battleships
 
 
-# Plan
+## Planning
 
 Example for a template of how the game would look-ish
 
