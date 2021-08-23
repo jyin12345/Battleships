@@ -22,9 +22,3 @@ void comparison(int num){
     else if (num % 3 == 0) printf("fizz\n");
     else printf("%d\n", num);
 }
-
-
-int main(){
-
-
-}
